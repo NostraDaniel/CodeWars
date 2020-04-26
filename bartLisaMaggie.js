@@ -4,15 +4,16 @@
 function list(names){
   //your code here
   let string='';
+  
   names.map(function(name,index,arr){
     if(arr.length-2===index){
-      string+=name.name+' & ';
+      string += name.name+' & ';
     }else if(arr.length-1===index){
-     string+=name.name;
+     string += name.name;
     }else {
-     string+=name.name+', '
+     string += name.name+', '
     }
   });
-  return string;
+
   return string;
 }
